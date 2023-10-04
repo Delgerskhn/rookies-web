@@ -1,6 +1,7 @@
 import {
   IconArrowDown,
   IconArrowsRightLeft,
+  IconBrain,
   IconBrandFacebook,
   IconBrandGithub,
   IconBrandInstagram,
@@ -8,9 +9,11 @@ import {
   IconBrandTailwind,
   IconBrandTwitter,
   IconBulb,
+  IconChartArrows,
   IconCheck,
   IconChevronDown,
   IconClock,
+  IconCode,
   IconComponents,
   IconDownload,
   IconHeadset,
@@ -19,6 +22,7 @@ import {
   IconMail,
   IconMapPin,
   IconMessages,
+  IconMovie,
   IconPhoneCall,
   IconRocket,
   IconRss,
@@ -467,74 +471,74 @@ export const featuresData: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        What is our <span className="whitespace-nowrap">mission</span>
       </>
     ),
     subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.',
-    highlight: 'Features',
+      'Our mission is to use AI and data science to revolutionize industries and improve digital engagement by providing cutting-edge technological solutions.',
+    highlight: 'MISSION',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'AI-Powered Insights',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-      icon: IconBrandTailwind,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'We provide data-driven insights through AI analysis of large datasets, enabling informed decisions and fostering business growth.',
+      icon: IconBrain,
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Predictive Analytics',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-      icon: IconComponents,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'We offer predictive models that anticipate future trends and outcomes, empowering proactive strategy adjustments for areas like demand, market trends, and customer behavior.',
+      icon: IconChartArrows,
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Best Practices',
+      title: 'Image and Video Analysis',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconListCheck,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'Our AI systems extract valuable information from visual data, including object recognition and content moderation, enabling insights from images and videos.',
+      icon: IconMovie,
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'Digital Presence Services',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-      icon: IconRocket,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+        'We create user-centric and visually captivating mobile apps and websites to elevate your online presence and engage your audience effectively.',
+      icon: IconCode,
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
-    {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconBulb,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
+    // {
+    //   title: 'Search Engine Optimization (SEO)',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+    //   icon: IconArrowsRightLeft,
+    //   link: {
+    //     label: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
+    // {
+    //   title: 'Open to new ideas and contributions',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+    //   icon: IconBulb,
+    //   link: {
+    //     label: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
   ],
 };
 
