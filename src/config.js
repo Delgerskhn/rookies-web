@@ -1,10 +1,11 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'AI ROOKIES',
 
   origin: 'https://tailnext.vercel.app',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'AI ROOKIES — BETTER THE WORLD WITH AI',
+  description:
+    'Empowering positive change through cutting-edge AI, Computer Vision solutions to address pressing societal challenges',
 };
