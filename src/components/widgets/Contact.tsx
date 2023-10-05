@@ -1,9 +1,13 @@
+'use client';
 import { contactData } from '~/shared/data';
 import Form from '../common/Form';
 import HeaderWidget from '../common/HeaderWidget';
+import ContactForm from './ContactForm';
+import { useForm } from '@formspree/react';
 
 const Contact = () => {
   const { header, content, items, form } = contactData;
+  const [state, handleSubmit] = useForm('xzblkybw');
 
   return (
     <section className="bg-primary-50 dark:bg-slate-800" id="contact">
@@ -12,14 +16,14 @@ const Contact = () => {
         <div className="flex items-stretch justify-center">
           <div className="grid md:grid-cols-2">
             <div className="h-full pr-6">
-              {content && <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">{content}</p>}
+              {content && <p className="mb-12 mt-3 text-lg text-gray-600 dark:text-slate-400">{content}</p>}
               <ul className="mb-6 md:mb-0">
                 {items.map(({ title, description, icon: Icon }, index) => (
                   <li key={`item-contact-${index}`} className="flex">
                     <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
                       {Icon && <Icon className="h-6 w-6" />}
                     </div>
-                    <div className="ml-4 mb-4">
+                    <div className="mb-4 ml-4">
                       <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">{title}</h3>
                       {typeof description === 'string' ? (
                         <p key={`text-description-${index}`} className="text-gray-600 dark:text-slate-400">
@@ -38,7 +42,12 @@ const Contact = () => {
                 ))}
               </ul>
             </div>
-            <Form {...form} btnPosition="center" />
+            {state.succeeded ? (
+              <h2 className="text-xl">Thanks for joining!</h2>
+            ) : (
+              <Form onSubmit={handleSubmit} {...form} btnPosition="center" />
+            )}
+            {/* <ContactForm /> */}
           </div>
         </div>
       </div>

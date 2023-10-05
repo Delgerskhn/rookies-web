@@ -5,9 +5,9 @@ import { ContentProps } from '~/shared/types';
 import HeaderWidget from '../common/HeaderWidget';
 
 const Content = ({ header, content, items, image, isReversed, isAfterContent }: ContentProps) => (
-  <section className="bg-primary-50 dark:bg-slate-800">
+  <section className="bg-primary-50 dark:bg-slate-800" id="solution">
     <div
-      className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${isAfterContent ? 'pt-1 pb-16 md:pb-20' : 'py-16 md:py-20'}`}
+      className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${isAfterContent ? 'pb-16 pt-1 md:pb-20' : 'py-16 md:py-20'}`}
     >
       {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
       <div className="mx-auto max-w-7xl">

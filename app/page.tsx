@@ -36,13 +36,13 @@ export default function Page() {
       <Features3 {...featuresData} />
       <Content {...contentData} />
       <Content {...content2Data} />
-      <Steps />
-      <Testimonial />
-      <FAQs2 {...faqsData2} />
-      <Pricing {...pricingData} />
-      <Team />
+      {/* <Steps /> */}
+      {/* <Testimonial /> */}
+      {/* <FAQs2 {...faqsData2} /> */}
+      {/* <Pricing {...pricingData} /> */}
+      {/* <Team /> */}
       <Contact />
-      <CallToAction2 {...callToActionData} />
+      {/* <CallToAction2 {...callToActionData} /> */}
     </>
   );
 }

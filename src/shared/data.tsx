@@ -23,6 +23,7 @@ import {
   IconMapPin,
   IconMessages,
   IconMovie,
+  IconPhone,
   IconPhoneCall,
   IconRocket,
   IconRss,
@@ -46,12 +47,13 @@ import {
   TestimonialProps,
 } from './types';
 
-import cameraFrontImg from '~/assets/images/camera-front.jpg';
-import cameraBackImg from '~/assets/images/camera-back.jpg';
+import anprSystemImg from '~/assets/images/anpr-1.png';
+import trafficMonitorImg from '~/assets/images/traffic-monitor.jpeg';
 import heroImg from '~/assets/images/hero.png';
 import hero2Img from '~/assets/images/hero2.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
+import mlubLogo from '~/assets/images/mlublogo.png';
 import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
@@ -72,50 +74,50 @@ export const announcementData: AnnouncementProps = {
 // Header data
 export const headerData: HeaderProps = {
   links: [
-    {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        {
-          label: 'FAQs',
-          href: '/faqs',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-      ],
-    },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
+    // {
+    //   label: 'Pages',
+    //   icon: IconChevronDown,
+    //   links: [
+    //     {
+    //       label: 'About us',
+    //       href: '/about',
+    //     },
+    //     {
+    //       label: 'Pricing',
+    //       href: '/pricing',
+    //     },
+    //     {
+    //       label: 'Contact us',
+    //       href: '/contact',
+    //     },
+    //     {
+    //       label: 'FAQs',
+    //       href: '/faqs',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //   ],
+    // },
+    // {
+    //   label: 'Blog',
+    //   href: '/blog',
+    // },
+    // {
+    //   label: 'Contact',
+    //   href: '/contact',
+    // },
   ],
   actions: [
     {
-      text: 'Download',
-      href: 'https://github.com/onwidget/tailnext',
-      targetBlank: true,
+      text: 'Холбоо барих',
+      href: '#contact',
+      targetBlank: false,
       btnType: 'primary',
     },
   ],
@@ -135,19 +137,18 @@ export const heroData: HeroProps = {
     </>
   ),
   callToAction: {
-    text: 'Get template',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
+    text: 'Холбогдох',
+    href: '#contact',
+    icon: IconPhone,
     btnType: 'primary',
   },
   callToAction2: {
-    text: 'Learn more',
-    href: '/',
+    text: 'Бидний шийдэл',
+    href: '#solution',
   },
   image: {
     src: heroImg,
-    alt: 'Hero TailNext',
+    alt: 'Hero AiRookies',
   },
 };
 
@@ -176,25 +177,25 @@ export const hero2Data: HeroProps = {
 export const socialProofData: SocialProofProps = {
   images: [
     {
-      link: 'https://nextjs.org/',
-      src: nextJsLogo,
-      alt: 'NextJs Logo',
+      link: 'https://mlub.mn/',
+      src: mlubLogo,
+      alt: 'MLUB Logo',
     },
-    {
-      link: 'https://react.dev/',
-      src: reactLogo,
-      alt: 'React Logo',
-    },
-    {
-      link: 'https://tailwindcss.com/',
-      src: tailwindCssLogo,
-      alt: 'Tailwind CSS Logo',
-    },
-    {
-      link: 'https://www.typescriptlang.org/',
-      src: typescriptLogo,
-      alt: 'Typescript Logo',
-    },
+    // {
+    //   link: 'https://react.dev/',
+    //   src: reactLogo,
+    //   alt: 'React Logo',
+    // },
+    // {
+    //   link: 'https://tailwindcss.com/',
+    //   src: tailwindCssLogo,
+    //   alt: 'Tailwind CSS Logo',
+    // },
+    // {
+    //   link: 'https://www.typescriptlang.org/',
+    //   src: typescriptLogo,
+    //   alt: 'Typescript Logo',
+    // },
   ],
 };
 
@@ -469,20 +470,16 @@ export const callToActionData2: CallToActionProps = {
 // Feature data
 export const featuresData: FeaturesProps = {
   header: {
-    title: (
-      <>
-        What is our <span className="whitespace-nowrap">mission</span>
-      </>
-    ),
+    title: <>Бидний алсын хараа</>,
     subtitle:
-      'Our mission is to use AI and data science to revolutionize industries and improve digital engagement by providing cutting-edge technological solutions.',
+      'Бидний эрхэм зорилго бол хиймэл оюун ухаан, мэдээллийн шинжлэх ухааныг ашиглан салбаруудад хувьсгал хийж, хамгийн сүүлийн үеийн технологийн шийдлээр дижитал оролцоог сайжруулах явдал юм.',
     highlight: 'MISSION',
   },
   items: [
     {
-      title: 'AI-Powered Insights',
+      title: 'AI-д суурилсан үнэлгээ',
       description:
-        'We provide data-driven insights through AI analysis of large datasets, enabling informed decisions and fostering business growth.',
+        'Бид их хэмжээний өгөгдөл дээр хиймэл оюун ухаан ашиглан дүн шинжилгээ хийж, мэдээлэлд суурилсан шийдвэр гаргах, бизнесийн өсөлтийг дэмжих боломжийг олгоно.',
       icon: IconBrain,
       // link: {
       //   label: 'Discover now',
@@ -490,9 +487,9 @@ export const featuresData: FeaturesProps = {
       // },
     },
     {
-      title: 'Predictive Analytics',
+      title: 'Урьдчилан таамаглах аналитик',
       description:
-        'We offer predictive models that anticipate future trends and outcomes, empowering proactive strategy adjustments for areas like demand, market trends, and customer behavior.',
+        'Бид ирээдүйн чиг хандлага, үр дүнг урьдчилан таамаглах загваруудыг санал болгож, эрэлт хэрэгцээ, зах зээлийн чиг хандлага, үйлчлүүлэгчийн зан байдал зэрэг салбарт идэвхтэй стратеги боловсруулах боломжийг олгодог.',
       icon: IconChartArrows,
       // link: {
       //   label: 'Discover now',
@@ -500,9 +497,9 @@ export const featuresData: FeaturesProps = {
       // },
     },
     {
-      title: 'Image and Video Analysis',
+      title: 'Зураг ба видео анализ',
       description:
-        'Our AI systems extract valuable information from visual data, including object recognition and content moderation, enabling insights from images and videos.',
+        'Манай хиймэл оюун ухааны системүүд нь объектыг таних, контентыг зохицуулах зэрэг визуал өгөгдлөөс үнэ цэнэтэй мэдээллийг гаргаж авдаг бөгөөд энэ нь зураг, видеоноос ойлголт авах боломжийг олгодог.',
       icon: IconMovie,
       // link: {
       //   label: 'Discover now',
@@ -510,9 +507,9 @@ export const featuresData: FeaturesProps = {
       // },
     },
     {
-      title: 'Digital Presence Services',
+      title: 'Дижитал үйлчилгээ',
       description:
-        'We create user-centric and visually captivating mobile apps and websites to elevate your online presence and engage your audience effectively.',
+        'Бид хэрэглэгчийн хэрэгцээ шаардлагад нийцсэн, өнгө үзэмж цогцолсон утасны аппликэйшн болон вэбсайт хийдэг.',
       icon: IconCode,
       // link: {
       //   label: 'Discover now',
@@ -619,31 +616,33 @@ export const featuresData3: FeaturesProps = {
 // Content data
 export const contentData: ContentProps = {
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    highlight: 'Content',
+    title: 'Бидний шийдлүүд',
+    subtitle: 'Машины дугаар, сул зогсоолыг илрүүлэх камерт суурилсан шийдлүүд',
+    highlight: 'VISION AI',
   },
-  content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+  content: <h2 className="font-heading mb-8 text-3xl font-bold lg:text-4xl">ANPR/ALPR машины дугаар танилт</h2>,
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Өндөр нарийвчлал',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        '200 мянган бодит болон 1 сая хиймэл зурган дээр сургагдсан хиймэл оюуны загварыг сургасан ба нарийвчлал 97%-аас дээш байгаа.',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
-      description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+      title: 'Камер хамаарахгүй',
+      description: 'Тодорхой заасан камер бус та өөрийн хүссэн камертай интеграци хийн холбох боломжтой.',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Өргөн боломж',
+      description: 'Өөрсдийн хөгжүүлж буй систем тул дурын өөрчлөлт нэмэлтийг хийх.',
+    },
+    {
+      title: 'Хөдөлгөөнт болон суурин',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Суурин болон хөдөлгөөнт камера болон мөн гар утсан дээр тухайн дугаар таних системийг оруулж болно.',
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: anprSystemImg,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -652,30 +651,24 @@ export const contentData: ContentProps = {
 
 // Content2 data
 export const content2Data: ContentProps = {
-  content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+  content: <h2 className="font-heading mb-8 text-3xl font-bold lg:text-4xl">Замын хөдөлгөөний хяналт</h2>,
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: '3D биет илрүүлэх',
+      description:
+        '3 хэмжээст биеийг хайх хиймэл оюуны технологи дээр суурилан машины хөдөлгөөний эрчим болон явган хүний хаагуур явж буйг илрүүлэн олох боломжтой систем',
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Оптимизаци хийх',
+      description:
+        'Хөдөлгөөний эрчмийн үр дүн дээр тээвэр ложистикийн чиглэлд хамгийн ашигтай замын чиглэлийг тооцох гэх мэт боломжтой',
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
-    {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Дурын камератай интеграци хийн холбох боломжтой',
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: trafficMonitorImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -1075,39 +1068,40 @@ export const statsData: StatsProps = {
 // Contact data
 export const contactData: ContactProps = {
   header: {
-    title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    title: 'Холбоо барих',
+    // subtitle: 'In hac habitasse platea dictumst',
     highlight: 'Contact',
   },
-  content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+  // content:
+  //   'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
   items: [
     {
-      title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      title: 'Манай хаяг',
+      description: ['Хаб Инновэйшн Центр, 8-р хороо, Бээжингийн гудамж, Сүхбаатар дүүрэг, Улаанбаатар хот, Монгол улс'],
       icon: IconMapPin,
     },
     {
-      title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      title: 'Холбогдох утас',
+      description: ['+976-88216971'],
       icon: IconPhoneCall,
     },
     {
-      title: 'Working hours',
-      description: ['Monday - Friday: 08:00 - 17:00', 'Saturday & Sunday: 08:00 - 12:00'],
+      title: 'Ажлын цаг',
+      description: ['Даваа - Баасан: 09:00 - 18:00'],
       icon: IconClock,
     },
   ],
   form: {
     title: 'Ready to Get Started?',
     inputs: [
+      // {
+      //   type: 'text',
+      //   name: 'name',
+      //   autocomplete: 'given-name',
+      //   placeholder: 'Your name',
+      // },
       {
-        type: 'text',
-        name: 'name',
-        autocomplete: 'given-name',
-        placeholder: 'Your name',
-      },
-      {
+        id: 'email',
         type: 'email',
         name: 'email',
         autocomplete: 'email',
@@ -1117,7 +1111,8 @@ export const contactData: ContactProps = {
     textarea: {
       cols: 30,
       rows: 5,
-      name: 'textarea',
+      id: 'message',
+      name: 'message',
       placeholder: 'Write your message...',
     },
     btn: {
@@ -1221,7 +1216,7 @@ export const contact2Data: ContactProps = {
 
 // Footer data
 export const footerData: FooterProps = {
-  title: 'TailNext',
+  title: 'AiRookies',
   links: [
     {
       label: 'Terms & Conditions',
@@ -1361,45 +1356,60 @@ export const footerData: FooterProps = {
 // Footer2 data
 export const footerData2: FooterProps = {
   links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
+    // {
+    //   label: 'Terms & Conditions',
+    //   href: '/terms',
+    // },
+    // {
+    //   label: 'Privacy Policy',
+    //   href: '/privacy',
+    // },
   ],
+  // items: [
+  //   {
+  //     title: 'Манай хаяг',
+  //     description: ['Хаб Инновэйшн Центр, 8-р хороо, Бээжингийн гудамж, Сүхбаатар дүүрэг, Улаанбаатар хот, Монгол улс'],
+  //     icon: IconMapPin,
+  //   },
+  //   {
+  //     title: 'Холбогдох утас',
+  //     description: ['+976-88216971'],
+  //     icon: IconPhoneCall,
+  //   },
+  //   {
+  //     title: 'Ажлын цаг',
+  //     description: ['Даваа - Баасан: 09:00 - 18:00'],
+  //     icon: IconClock,
+  //   },
+  // ],
   columns: [
     {
-      title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      title: 'Манай хаяг',
+      texts: ['Хаб Инновэйшн Центр, 8-р хороо, Бээжингийн гудамж, Сүхбаатар дүүрэг, Улаанбаатар хот, Монгол улс'],
     },
     {
-      title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      title: 'Утас',
+      texts: [
+        '+976-88216971',
+        // 'Office: +107 235 7890'
+      ],
     },
     {
-      title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      title: 'И-мэйл',
+      texts: ['contact.rookies.ai@gmail.com'],
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+    // { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
+    { label: 'Instagram', icon: IconBrandInstagram, href: 'https://www.instagram.com/ai.rookies/' },
+    { label: 'Facebook', icon: IconBrandFacebook, href: 'https://www.facebook.com/profile.php?id=100092715045205' },
+    // { label: 'RSS', icon: IconRss, href: '#' },
+    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/airookies' },
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
       <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span>
-      Made by{' '}
-      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
-        {' '}
-        onWidget
-      </a>{' '}
-      · All rights reserved.
+      Made by AI Rookies · All rights reserved.
     </div>
   ),
 };

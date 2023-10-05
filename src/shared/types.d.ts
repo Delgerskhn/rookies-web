@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 interface Header {
   title?: string | ReactElement;
@@ -32,6 +32,7 @@ interface Input {
   label?: string;
   value?: string;
   name?: string;
+  id?: string;
   autocomplete?: string;
   placeholder?: string;
 }
@@ -40,7 +41,8 @@ interface Textarea {
   cols?: number;
   rows?: number;
   label?: string;
-  name: string;
+  id?: string;
+  name?: string;
   placeholder?: string;
 }
 
@@ -70,6 +72,7 @@ interface FormProps {
   inputs: Array<Input>;
   radioBtns?: RadioBtn;
   textarea?: Textarea;
+  onSubmit?: (e: any) => void;
   checkboxes?: Array<Checkbox>;
   btn: Button;
   btnPosition?: 'center' | 'right' | 'left';
@@ -189,7 +192,7 @@ interface FeaturesProps {
 
 interface ContentProps {
   header?: Header;
-  content?: string;
+  content?: ReactNode | string;
   items?: Array<Item>;
   image?: Image;
   isReversed?: boolean;
