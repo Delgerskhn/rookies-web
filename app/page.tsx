@@ -34,8 +34,8 @@ export default function Page() {
       <Hero data={heroData} />
       <SocialProof {...socialProofData} />
       <Features3 {...featuresData} />
-      <Content {...contentData} />
-      <Content {...content2Data} />
+      {/* <Content {...contentData} /> */}
+      {/* <Content {...content2Data} /> */}
       {/* <Steps /> */}
       {/* <Testimonial /> */}
       {/* <FAQs2 {...faqsData2} /> */}
