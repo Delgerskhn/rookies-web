@@ -5,9 +5,11 @@ import HeaderWidget from '../common/HeaderWidget';
 import ContactForm from './ContactForm';
 import { useForm } from '@formspree/react';
 
+const FormSpreeToken = 'mnqkoeob';
+
 const Contact = () => {
   const { header, content, items, form } = contactData;
-  const [state, handleSubmit] = useForm('xzblkybw');
+  const [state, handleSubmit] = useForm(FormSpreeToken);
 
   return (
     <section className="bg-primary-50 dark:bg-slate-800" id="contact">
