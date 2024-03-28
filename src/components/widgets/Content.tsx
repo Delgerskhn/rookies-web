@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { IconCheck } from '@tabler/icons-react';
 
-import { ContentProps } from '~/shared/types';
+import type { ContentProps } from '~/shared/types';
 import HeaderWidget from '../common/HeaderWidget';
 
 const Content = ({ header, content, items, image, isReversed, isAfterContent }: ContentProps) => (

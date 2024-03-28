@@ -1,5 +1,5 @@
 import { IconCheck, IconMinus } from '@tabler/icons-react';
-import { CallToAction, ComparisonProps } from '~/shared/types';
+import type { CallToAction, ComparisonProps } from '~/shared/types';
 import CTA from '../common/CTA';
 import HeaderWidget from '../common/HeaderWidget';
 

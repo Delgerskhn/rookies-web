@@ -1,5 +1,5 @@
 import { IconChevronRight } from '@tabler/icons-react';
-import { CallToActionProps, Item } from '~/shared/types';
+import type { CallToActionProps, Item } from '~/shared/types';
 
 const Card = ({ title, description, href, form }: Item) => (
   <div className="mb-6 rounded-md border-gray-400 bg-primary-50 px-5 py-4 text-base font-medium text-gray-700 shadow-md dark:bg-slate-900">

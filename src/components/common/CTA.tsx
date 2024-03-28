@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CallToAction } from '~/shared/types';
+import type { CallToAction } from '~/shared/types';
 
 const CTA = (props: { data: CallToAction; class?: string }) => {
   const { text, href, icon: Icon, targetBlank, btnText, btnType } = props.data;
@@ -17,7 +17,7 @@ const CTA = (props: { data: CallToAction; class?: string }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {Icon && <Icon className="mr-1 -ml-1.5 h-5 w-5" />} {text}
+              {Icon && <Icon className="-ml-1.5 mr-1 h-5 w-5" />} {text}
             </Link>
           ) : (
             <Link
@@ -26,7 +26,7 @@ const CTA = (props: { data: CallToAction; class?: string }) => {
               } ${btnText === 'uppercase' ? 'uppercase' : ''}`}
               href={href}
             >
-              {Icon && <Icon className="mr-1 -ml-1.5 h-5 w-5" />} {text}
+              {Icon && <Icon className="-ml-1.5 mr-1 h-5 w-5" />} {text}
             </Link>
           )}
         </div>

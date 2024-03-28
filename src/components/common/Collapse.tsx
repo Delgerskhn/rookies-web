@@ -2,7 +2,7 @@
 
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import { useState } from 'react';
-import { CollapseProps } from '~/shared/types';
+import type { CollapseProps } from '~/shared/types';
 
 const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps) => {
   const [toggle, setToggle] = useState<boolean>(true);
