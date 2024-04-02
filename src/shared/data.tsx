@@ -51,6 +51,7 @@ import anprSystemImg from '~/assets/images/anpr-1.png';
 import trafficMonitorImg from '~/assets/images/traffic-monitor.jpeg';
 import heroImg from '~/assets/images/hero.png';
 import hero2Img from '~/assets/images/hero2.jpg';
+import hero3Img from '~/assets/images/hero3.png';
 import gasImg from '~/assets/images/gas.jpg';
 import nextJsLogo from '~/assets/images/nextjs-logo.png';
 import mlubLogo from '~/assets/images/mlublogo.png';
@@ -147,7 +148,7 @@ export const heroData: HeroProps = {
     href: '#solution',
   },
   image: {
-    src: heroImg,
+    src: hero3Img,
     alt: 'Hero AiRookies',
   },
 };
@@ -168,7 +169,7 @@ export const hero2Data: HeroProps = {
     href: '/contact',
   },
   image: {
-    src: hero2Img,
+    src: hero3Img,
     alt: 'Hero TailNext',
   },
 };
@@ -1077,7 +1078,9 @@ export const contactData: ContactProps = {
   items: [
     {
       title: 'Манай хаяг',
-      description: ['Хаб Инновэйшн Центр, 8-р хороо, Бээжингийн гудамж, Сүхбаатар дүүрэг, Улаанбаатар хот, Монгол улс'],
+      description: [
+        '219 тоот, Мэдээлэл Технологийн Үндэсний Парк, Улаанбаатар- 210646, Сvхбаатар дvvрэг, Бага тойруу-49',
+      ],
       icon: IconMapPin,
     },
     {
@@ -1385,7 +1388,7 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Манай хаяг',
-      texts: ['Хаб Инновэйшн Центр, 8-р хороо, Бээжингийн гудамж, Сүхбаатар дүүрэг, Улаанбаатар хот, Монгол улс'],
+      texts: ['219 тоот, Мэдээлэл Технологийн Үндэсний Парк, Улаанбаатар- 210646, Сvхбаатар дvvрэг, Бага тойруу-49'],
     },
     {
       title: 'Утас',

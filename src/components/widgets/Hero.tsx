@@ -7,7 +7,7 @@ const Hero = (props: { data: HeroProps }) => {
 
   return (
     <section id="heroOne">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
             {title && (
@@ -23,19 +23,20 @@ const Hero = (props: { data: HeroProps }) => {
               </div>
             </div>
           </div>
-          {image && (
-            <div className="relative m-auto max-w-5xl">
+
+          {/* {image && (
+            <div className="relative m-auto max-w-xl">
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
+                className="mx-auto h-auto w-3/4 rounded-md"
                 placeholder="blur"
                 loading="eager"
                 priority
                 sizes="(max-width: 60rem) 90vw, 1024px"
               />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </section>

@@ -23,6 +23,8 @@ import {
   socialProofData,
 } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
+import { MacbookScroll } from '~/components/ui/macbook-scroll';
+import { BackgroundBeams } from '~/components/ui/background-beams';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -31,6 +33,8 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
+      {/* <MacbookScroll /> */}
+      <BackgroundBeams />
       <Hero data={heroData} />
       <SocialProof {...socialProofData} />
       <Features3 {...featuresData} />
