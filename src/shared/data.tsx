@@ -1399,7 +1399,7 @@ export const footerData2: FooterProps = {
     },
     {
       title: 'И-мэйл',
-      texts: ['contact.rookies.ai@gmail.com'],
+      texts: ['info@rookies.mn'],
     },
   ],
   socials: [
