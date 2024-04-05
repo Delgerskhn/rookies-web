@@ -25,6 +25,8 @@ import {
 import Contact from '~/components/widgets/Contact';
 import { MacbookScroll } from '~/components/ui/macbook-scroll';
 import { BackgroundBeams } from '~/components/ui/background-beams';
+import { HeroParallax } from '~/components/ui/HeroParallax';
+import { Services } from '~/data/services';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -35,7 +37,8 @@ export default function Page() {
     <>
       {/* <MacbookScroll /> */}
       <BackgroundBeams />
-      <Hero data={heroData} />
+      <HeroParallax products={Services} />
+      {/* <Hero data={heroData} /> */}
       <SocialProof {...socialProofData} />
       <Features3 {...featuresData} />
       {/* <Content {...contentData} /> */}
