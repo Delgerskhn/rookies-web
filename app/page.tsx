@@ -27,6 +27,9 @@ import { MacbookScroll } from '~/components/ui/macbook-scroll';
 import { BackgroundBeams } from '~/components/ui/background-beams';
 import { HeroParallax } from '~/components/ui/HeroParallax';
 import { Services } from '~/data/services';
+import { HoverEffect } from '~/components/ui/CardHoverEffect';
+import { LayoutGridDemo } from '~/components/ui/LayoutGridDemo';
+import { Solutions } from '~/components/widgets/Solutions';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -37,11 +40,20 @@ export default function Page() {
     <>
       {/* <MacbookScroll /> */}
       <BackgroundBeams />
-      <HeroParallax products={Services} />
-      {/* <Hero data={heroData} /> */}
+      {/* <HeroParallax products={Services} /> */}
+      <Hero data={heroData} />
       <SocialProof {...socialProofData} />
-      <Features3 {...featuresData} />
       {/* <Content {...contentData} /> */}
+      <Solutions />
+      {/* <LayoutGridDemo /> */}
+      <Features3 {...featuresData} />
+      {/* <HoverEffect
+        items={featuresData.items.map((x) => ({
+          title: x.title.toString(),
+          description: x.description?.toString() ?? '',
+          link: '#',
+        }))}
+      /> */}
       {/* <Content {...content2Data} /> */}
       {/* <Steps /> */}
       {/* <Testimonial /> */}

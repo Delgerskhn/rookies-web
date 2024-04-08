@@ -3,8 +3,6 @@ import React from 'react';
 import { motion, useScroll, useTransform, useSpring, MotionValue } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import CTA from '../common/CTA';
-import { IconPhone } from '@tabler/icons-react';
 
 export const HeroParallax = ({
   products,
@@ -108,7 +106,7 @@ export const ProductCard = ({
           src={product.thumbnail}
           height="600"
           width="600"
-          className="absolute inset-0 h-full w-full object-cover object-left-top"
+          className="absolute inset-0 h-full w-full object-cover object-center"
           alt={product.title}
         />
       </Link>
