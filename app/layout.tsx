@@ -6,6 +6,7 @@ import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Announcement from '~/components/widgets/Announcement';
 import Footer2 from '~/components/widgets/Footer2';
+import { Analytics } from '@vercel/analytics/react';
 
 import { Inter as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: LayoutProps) {
           <main>{children}</main>
           <Footer2 />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

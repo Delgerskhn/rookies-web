@@ -10,7 +10,6 @@ export const dynamicParams = false;
 const getFormattedDate = (date) => date;
 
 export async function generateMetadata({ params }) {
-  console.log('slug in page>>', params.slug);
 
   const post = await findPostBySlug(params.slug);
   if (!post) {
@@ -24,7 +23,6 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }) {
-  console.log('slug in page body>>', params.slug);
   const post = await findPostBySlug(params.slug);
 
   if (!post) {
