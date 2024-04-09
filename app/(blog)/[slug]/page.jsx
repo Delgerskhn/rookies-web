@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Solutions } from '~/components/widgets/Solutions';
 
-import { findPostBySlug, findLatestPosts } from '~/utils/posts';
+import { findPostBySlug, fetchPosts } from '~/utils/posts';
 
 export const dynamicParams = false;
 
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  return (await findLatestPosts()).map(({ slug }) => ({ slug }));
+  return (await fetchPosts()).map(({ slug }) => ({ slug }));
 }
 
 export default async function Page({ params }) {

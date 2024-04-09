@@ -23,7 +23,7 @@ export function Solutions({
       <div className={` mx-auto max-w-5xl px-4 py-16 sm:px-6 md:py-20 lg:px-8`}>
         {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
 
-        <BentoGrid className="mx-auto max-w-4xl">
+        <BentoGrid className="mx-auto">
           {Services.map((item, i) => (
             <BentoGridItem
               key={i}

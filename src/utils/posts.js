@@ -23,7 +23,9 @@ let _posts;
 
 /** */
 export const fetchPosts = async () => {
-  _posts = _posts || load();
+  if (!_posts) {
+    _posts = await load();
+  }
 
   return await _posts;
 };
