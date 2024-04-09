@@ -10,7 +10,7 @@ const CTA = (props: { data: CallToAction; class?: string }) => {
         <div className="flex w-full sm:w-auto">
           {targetBlank ? (
             <Link
-              className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full sm:mb-0 ${
+              className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full  sm:mb-0 ${
                 props.class ? props.class : ''
               } ${btnText === 'uppercase' ? 'uppercase' : ''}`}
               href={href}
