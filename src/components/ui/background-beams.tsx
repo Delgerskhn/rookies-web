@@ -62,6 +62,7 @@ export const BackgroundBeams = React.memo(({ className }: { className?: string }
         'absolute  inset-0 flex h-full  w-full items-center justify-center [mask-repeat:no-repeat] [mask-size:40px]',
         className,
       )}
+      style={{ zIndex: -1 }}
     >
       <svg
         className=" pointer-events-none absolute z-0 h-full w-full "

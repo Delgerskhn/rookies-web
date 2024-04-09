@@ -5,6 +5,7 @@ export type Service = {
   link: string;
   thumbnail: string;
   description: string;
+  wide: boolean;
 };
 
 export const Services: Service[] = [
@@ -13,25 +14,43 @@ export const Services: Service[] = [
     link: `${hostname}/post-bank-account-detection`,
     description: 'Бичмэл эсвэл хэвлэмэл банкны дансны дугаарыг гар утасны камераар таних шийдэл',
     thumbnail: '/socialpay.webp',
+    wide: false,
   },
   {
     title: 'Авто машины дугаар таних систем',
-    link: `${hostname}/post-alpr-and-anpr`,
+    link: `${hostname}/post-carplate-anpr`,
     description: 'Камер болон дүрс боловсруулалт ашиглан авто машины улсын дугаарыг таних шийдэл',
     thumbnail: '/device_demo_green.webp',
+    wide: true,
   },
   {
     title: 'Сул зогсоол илрүүлэх систем',
     link: `${hostname}/post-parking-slot-detection`,
     description: 'Зогсоолын камерийг ашиглан машин тавих боломжтой сул зайг тоолох шийдэл',
     thumbnail: '/slot-detection.webp',
+    wide: true,
   },
   // {
   //   title: 'И-Баримт унших, таних',
   //   link: `${hostname}/social-pay-app`,
   //   description: 'И-Баримтаас худалдан авсан бүтээгдэхүүний жагсаалт, үнийн дүнг таних',
   //   thumbnail: '/slot-detection.webp',
+  //   wide: false,
   // },
+  {
+    title: 'Хиймэл оюунд суурилсан Чатбот',
+    link: `${hostname}/post-llm`,
+    description: 'Урьдчилан бэлтгэсэн өгөгдөлд суурилан хэрэглэгчид мэдээлэл өгөх чатбот',
+    thumbnail: '/llm.webp',
+    wide: false,
+  },
+  {
+    title: 'Замын хөдөлгөөний хяналт',
+    link: `${hostname}/post-traffic-monitoring`,
+    description: 'Замын хөдөлгөөний эрчмийг камерийн тусламжтай хянах боломжтой систем',
+    thumbnail: '/traffic.webp',
+    wide: true,
+  },
   // {
   //   title: 'EKYC',
   //   link: `${hostname}/social-pay-app`,
@@ -39,13 +58,7 @@ export const Services: Service[] = [
   //   thumbnail:
   //     'https://ui.aceternity.com/_next/image?url=https%3A%2F%2Faceternity.com%2Fimages%2Fproducts%2Fthumbnails%2Fnew%2Fcursor.png&w=640&q=75',
   // },
-  // {
-  //   title: 'Хиймэл оюун ассистант систем',
-  //   link: `${hostname}/social-pay-app`,
-  //   description: 'Урьдчилан бэлтгэсэн өгөгдөлд суурилан хэрэглэгчид мэдээлэл өгөх чатбот',
-  //   thumbnail:
-  //     'https://ui.aceternity.com/_next/image?url=https%3A%2F%2Faceternity.com%2Fimages%2Fproducts%2Fthumbnails%2Fnew%2Fmoonbeam.png&w=1200&q=75',
-  // },
+
   // {
   //   title: 'Хөдөө аж ахуй, ХАА',
   //   link: `${hostname}/social-pay-app`,

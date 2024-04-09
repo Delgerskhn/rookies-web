@@ -18,5 +18,5 @@ tags: [markdown, blog, AI, ML]
 
 Дотор зогсоолд сул зогсоол гарч байгааг хянаж буй бичлэг.
 ![Slot-detection-video](/slot-detection.webp)
-Гадаах зогсоол дээрх камераар сул зайг хянах буй жишээ.
+Гадаах зогсоол дээрх камераар сул зайг хянаж буй жишээ.
 ![Slot-detection-outdoor](/slot-detect-example.png)

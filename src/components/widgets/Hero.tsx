@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
+import { BackgroundBeams } from '../ui/background-beams';
 
 const Hero = (props: { data: HeroProps }) => {
   const { title, subtitle, callToAction, callToAction2, image } = props.data;
@@ -15,7 +16,7 @@ const Hero = (props: { data: HeroProps }) => {
                 {title}
               </h1>
             )}
-            <div className="mx-auto max-w-3xl">
+            <div className="z-50 mx-auto max-w-3xl">
               {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
               <div className="flex max-w-none flex-col flex-nowrap gap-4 px-4 sm:flex-row sm:justify-center">
                 {callToAction && <CTA data={callToAction} />}
@@ -39,6 +40,7 @@ const Hero = (props: { data: HeroProps }) => {
           )} */}
         </div>
       </div>
+      {/* <BackgroundBeams /> */}
     </section>
   );
 };

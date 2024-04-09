@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
   return (
-    <div className={cn('mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[28rem] md:grid-cols-3 ', className)}>
+    <div className={cn('mx-auto grid max-w-7xl grid-cols-1 gap-6 md:auto-rows-[28rem] md:grid-cols-3 ', className)}>
       {children}
     </div>
   );
@@ -29,7 +29,7 @@ export const BentoGridItem = ({
     <Link
       href={href}
       className={cn(
-        'group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-transparent bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-slate-900 ',
+        'group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-transparent bg-white p-4 shadow-lg transition duration-200 hover:shadow-2xl dark:border-white/[0.2] dark:bg-slate-900 ',
         className,
       )}
     >

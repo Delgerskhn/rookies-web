@@ -30,6 +30,7 @@ import { Services } from '~/data/services';
 import { HoverEffect } from '~/components/ui/CardHoverEffect';
 import { LayoutGridDemo } from '~/components/ui/LayoutGridDemo';
 import { Solutions } from '~/components/widgets/Solutions';
+import { StickyScrollRevealDemo } from '~/components/ui/StickyScrollDemo';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -39,14 +40,16 @@ export default function Page() {
   return (
     <>
       {/* <MacbookScroll /> */}
-      <BackgroundBeams />
       {/* <HeroParallax products={Services} /> */}
       <Hero data={heroData} />
-      <SocialProof {...socialProofData} />
+      <BackgroundBeams />
       {/* <Content {...contentData} /> */}
       <Solutions />
+      {/* <StickyScrollRevealDemo /> */}
       {/* <LayoutGridDemo /> */}
       <Features3 {...featuresData} />
+      <SocialProof {...socialProofData} />
+
       {/* <HoverEffect
         items={featuresData.items.map((x) => ({
           title: x.title.toString(),

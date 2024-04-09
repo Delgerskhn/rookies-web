@@ -3,13 +3,21 @@ import { BentoGrid, BentoGridItem } from '../ui/BentoGrid';
 import HeaderWidget from '../common/HeaderWidget';
 import { Services } from '~/data/services';
 
-const header = {
+const HEADER = {
   title: 'Бидний шийдлүүд',
   subtitle: 'Дүрс боловсруулалтад суурилсан машин сургалтын шийдлүүд',
   highlight: 'VISION AI',
 };
 
-export function Solutions() {
+export function Solutions({
+  header = HEADER,
+}: {
+  header?: {
+    title: string;
+    subtitle: string;
+    highlight: string;
+  };
+}) {
   return (
     <section className="bg-primary-50 dark:bg-slate-800" id="solution">
       <div className={` mx-auto max-w-5xl px-4 py-16 sm:px-6 md:py-20 lg:px-8`}>
@@ -24,7 +32,7 @@ export function Solutions() {
               description={item.description}
               thumbnail={item.thumbnail}
               icon={null}
-              className={i == 1 || i == 2 ? 'md:col-span-2' : ''}
+              className={item.wide ? 'md:col-span-2' : ''}
             />
           ))}
         </BentoGrid>
