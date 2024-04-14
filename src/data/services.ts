@@ -30,18 +30,18 @@ export const Services: Service[] = [
     thumbnail: '/slot-detection.webp',
     wide: true,
   },
-  // {
-  //   title: 'И-Баримт унших, таних',
-  //   link: `${hostname}/social-pay-app`,
-  //   description: 'И-Баримтаас худалдан авсан бүтээгдэхүүний жагсаалт, үнийн дүнг таних',
-  //   thumbnail: '/slot-detection.webp',
-  //   wide: false,
-  // },
   {
     title: 'Хиймэл оюунд суурилсан Чатбот',
     link: `${hostname}/post-llm`,
     description: 'Урьдчилан бэлтгэсэн өгөгдөлд суурилан хэрэглэгчид мэдээлэл өгөх чатбот',
     thumbnail: '/llm.webp',
+    wide: false,
+  },
+  {
+    title: 'И-Баримт уншилт',
+    link: `${hostname}/post-e-barimt`,
+    description: 'И-Баримтаас худалдан авсан бүтээгдэхүүний жагсаалт, үнийн дүнг таних',
+    thumbnail: '/e-barimt-recognition.webp',
     wide: false,
   },
   {
