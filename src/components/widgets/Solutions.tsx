@@ -1,7 +1,9 @@
 import React from 'react';
 import { BentoGrid, BentoGridItem } from '../ui/BentoGrid';
 import HeaderWidget from '../common/HeaderWidget';
-import { Services } from '~/data/services';
+import { Service, Services } from '~/data/services';
+import { Locale, getDictionary } from '~/locales/getDictionary';
+import { defaultLocale } from '~/locales/locale';
 
 const HEADER = {
   title: 'Бидний шийдлүүд',
@@ -11,12 +13,14 @@ const HEADER = {
 
 export function Solutions({
   header = HEADER,
+  services,
 }: {
   header?: {
     title: string;
     subtitle: string;
     highlight: string;
   };
+  services: Service[];
 }) {
   return (
     <section className="bg-primary-50 dark:bg-slate-800" id="solution">
@@ -24,7 +28,7 @@ export function Solutions({
         {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-5xl" />}
 
         <BentoGrid className="mx-auto">
-          {Services.map((item, i) => (
+          {services.map((item, i) => (
             <BentoGridItem
               key={i}
               href={item.link}

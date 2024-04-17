@@ -1,5 +1,3 @@
-import { hostname } from '~/utils/get-hostname';
-
 export type Service = {
   title: string;
   link: string;
@@ -11,49 +9,49 @@ export type Service = {
 export const Services: Service[] = [
   {
     title: 'Банкны дансны дугаар танилт',
-    link: `${hostname}/post-bank-account-detection`,
+    link: `/post-bank-account-detection`,
     description: 'Бичмэл эсвэл хэвлэмэл банкны дансны дугаарыг гар утасны камераар таних шийдэл',
     thumbnail: '/socialpay.webp',
     wide: false,
   },
   {
     title: 'Авто машины дугаар таних систем',
-    link: `${hostname}/post-carplate-anpr`,
+    link: `/post-carplate-anpr`,
     description: 'Камер болон дүрс боловсруулалт ашиглан авто машины улсын дугаарыг таних шийдэл',
     thumbnail: '/device_demo_green.webp',
     wide: true,
   },
   {
     title: 'Сул зогсоол илрүүлэх систем',
-    link: `${hostname}/post-parking-slot-detection`,
+    link: `/post-parking-slot-detection`,
     description: 'Зогсоолын камерийг ашиглан машин тавих боломжтой сул зайг тоолох шийдэл',
     thumbnail: '/slot-detection.webp',
     wide: true,
   },
   {
     title: 'Хиймэл оюунд суурилсан Чатбот',
-    link: `${hostname}/post-llm`,
+    link: `/post-llm`,
     description: 'Урьдчилан бэлтгэсэн өгөгдөлд суурилан хэрэглэгчид мэдээлэл өгөх чатбот',
     thumbnail: '/llm.webp',
     wide: false,
   },
   {
     title: 'И-Баримт уншилт',
-    link: `${hostname}/post-e-barimt`,
+    link: `/post-e-barimt`,
     description: 'И-Баримтаас худалдан авсан бүтээгдэхүүний жагсаалт, үнийн дүнг таних',
     thumbnail: '/e-barimt-recognition.webp',
     wide: false,
   },
   {
     title: 'Замын хөдөлгөөний хяналт',
-    link: `${hostname}/post-traffic-monitoring`,
+    link: `/post-traffic-monitoring`,
     description: 'Замын хөдөлгөөний эрчмийг камерийн тусламжтай хянах боломжтой систем',
     thumbnail: '/traffic.webp',
     wide: true,
   },
   // {
   //   title: 'EKYC',
-  //   link: `${hostname}/social-pay-app`,
+  //   link: `/social-pay-app`,
   //   description: 'Иргэний үнэмлэх болон нүүрний хэлбэр танилт, баталгаажуулалт',
   //   thumbnail:
   //     'https://ui.aceternity.com/_next/image?url=https%3A%2F%2Faceternity.com%2Fimages%2Fproducts%2Fthumbnails%2Fnew%2Fcursor.png&w=640&q=75',

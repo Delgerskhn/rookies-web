@@ -2,6 +2,7 @@ import md from 'markdown-it';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Solutions } from '~/components/widgets/Solutions';
+import { getDictionary } from '~/locales/getDictionary';
 
 import { findPostBySlug, fetchPosts } from '~/utils/posts';
 
@@ -10,7 +11,6 @@ export const dynamicParams = false;
 const getFormattedDate = (date) => date;
 
 export async function generateMetadata({ params }) {
-
   const post = await findPostBySlug(params.slug);
   if (!post) {
     return notFound();
@@ -19,12 +19,14 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  return (await fetchPosts()).map(({ slug }) => ({ slug }));
+  const slugs = (await fetchPosts()).map(({ slug }) => ({ slug }));
+  return slugs;
 }
 
 export default async function Page({ params }) {
-  const post = await findPostBySlug(params.slug);
-
+  const post = await findPostBySlug(params.slug, params.lang);
+  const intl = await getDictionary(params.lang);
+  const services = intl.services;
   if (!post) {
     return notFound();
   }
@@ -73,6 +75,7 @@ export default async function Page({ params }) {
           title: 'Бусад шийдлүүд',
           highlight: 'VISION AI',
         }}
+        services={services}
       />
     </>
   );

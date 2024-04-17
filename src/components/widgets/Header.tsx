@@ -6,14 +6,14 @@ import ToggleDarkMode from '~/components/atoms/ToggleDarkMode';
 import Link from 'next/link';
 import Logo from '~/components/atoms/Logo';
 import ToggleMenu from '../atoms/ToggleMenu';
-import { headerData } from '~/shared/data';
 import CTA from '../common/CTA';
 import CallToAction from './CallToAction';
 import { LogoWithTitle } from '../atoms/LogoWithTitle';
+import ToggleLocale from '../atoms/ToggleLocale';
+import { HeaderProps } from '~/shared/types';
 
-const Header = () => {
+const Header = ({ headerData }: { headerData: HeaderProps }) => {
   const { links, actions, isSticky, showToggleTheme, showRssFeed, position } = headerData;
-
   const updatedIsDropdownOpen =
     links &&
     links.map(() => {
@@ -128,6 +128,7 @@ const Header = () => {
           } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0`}
         >
           <div className="flex w-full items-center justify-between md:w-auto">
+            <ToggleLocale />
             {showToggleTheme && <ToggleDarkMode />}
             {showRssFeed && (
               <Link
@@ -139,7 +140,7 @@ const Header = () => {
               </Link>
             )}
             {actions && actions.length > 0 && (
-              <div className="ml-4 flex w-max flex-wrap justify-end">
+              <div className="ml-4 flex w-44 flex-wrap justify-end">
                 {actions.map((callToAction, index) => (
                   <CTA
                     key={`item-action-${index}`}

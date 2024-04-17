@@ -13,6 +13,7 @@
     "prettier:check": "prettier --check --ignore-unknown ."
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
     "@formspree/react": "^2.5.1",
     "@tabler/icons-react": "^2.22.0",
     "@vercel/analytics": "^1.2.2",
@@ -20,6 +21,7 @@
     "framer-motion": "^11.0.24",
     "gray-matter": "^4.0.3",
     "markdown-it": "^13.0.1",
+    "negotiator": "^0.6.3",
     "next": "^13.4.4",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
@@ -31,6 +33,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/jest": "^29.5.12",
     "@types/markdown-it": "^12.2.3",
+    "@types/negotiator": "^0.6.3",
     "@types/node": "20.2.3",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",

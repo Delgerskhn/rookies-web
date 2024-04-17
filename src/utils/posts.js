@@ -4,15 +4,16 @@ import { join } from 'path';
 
 const BLOG_DIR = join(process.cwd(), 'src/content/blog');
 
-const load = () => {
-  const files = fs.readdirSync(BLOG_DIR);
+const load = (locale = 'mn') => {
+  const dir = join(BLOG_DIR, locale);
+  const files = fs.readdirSync(dir);
 
   const posts = Promise.all(
     files
       .filter((filename) => filename.endsWith('.md'))
       .map(async (filename) => {
         const slug = filename.replace('.md', '');
-        return await findPostBySlug(slug);
+        return await findPostBySlug(slug, locale);
       }),
   );
 
@@ -22,9 +23,9 @@ const load = () => {
 let _posts;
 
 /** */
-export const fetchPosts = async () => {
+export const fetchPosts = async (locale = 'mn') => {
   if (!_posts) {
-    _posts = await load();
+    _posts = await load(locale);
   }
 
   return await _posts;
@@ -39,11 +40,11 @@ export const findLatestPosts = async ({ count } = {}) => {
 };
 
 /** */
-export const findPostBySlug = async (slug) => {
+export const findPostBySlug = async (slug, locale = 'mn') => {
   if (!slug) return null;
 
   try {
-    const readFile = fs.readFileSync(join(BLOG_DIR, `${slug}.md`), 'utf-8');
+    const readFile = fs.readFileSync(join(BLOG_DIR, locale, `${slug}.md`), 'utf-8');
     const { data: frontmatter, content } = matter(readFile);
     return {
       slug,
@@ -53,18 +54,4 @@ export const findPostBySlug = async (slug) => {
   } catch (e) {}
 
   return null;
-};
-
-/** */
-export const findPostsByIds = async (ids) => {
-  if (!Array.isArray(ids)) return [];
-
-  const posts = await fetchPosts();
-
-  return ids.reduce(function (r, id) {
-    posts.some(function (post) {
-      return id === post.id && r.push(post);
-    });
-    return r;
-  }, []);
 };

@@ -1,0 +1,112 @@
+{
+  "hello": "hello",
+  "contact": {
+    "title": "Contact Us",
+    "highlight": "Contact",
+    "address": {
+      "title": "Address",
+      "description": [
+        "219 door, Information Technology Park, IT Park, Ulaanbaatar - 210646, Sukhbaatar district, Baga Toiruu-49"
+      ]
+    },
+    "phone": {
+      "title": "Telephone",
+      "description": [
+        "+976-88216971"
+      ]
+    },
+    "email": {
+      "title": "Email"
+    },
+    "workhours": {
+      "title": "Working hours",
+      "description": [
+        "Mon - Fri: 09: 00 - 18: 00"
+      ]
+    },
+    "form": {
+      "title": "Send a message to us?",
+      "emailPlaceholder": "Your email address",
+      "inputPlaceholder": "Write your message...",
+      "sendTxt": "Send Message"
+    }
+  },
+  "hero": {
+    "title": "Better the world with AI",
+    "subtitle": "Empowering positive change through cutting-edge AI, Computer Vision solutions to address pressing societal challenges"
+  },
+  "solution": {
+    "title": "Our Solutions",
+    "subtitle": "Machine learning solutions based on image processing",
+    "highlight": "VISION AI"
+  },
+  "mission": {
+    "header": {
+      "title": "Our Mission",
+      "subtitle": "Our mission is to optimize efficiency in various fields by utilizing artificial intelligence, data analytics, and the latest digital technologies.",
+      "highlight": "MISSION"
+    },
+    "items": [
+      {
+        "title": "AI-powered Analytics",
+        "description": "We leverage artificial intelligence on large datasets to conduct data analysis, generate insights, and facilitate business growth."
+      },
+      {
+        "title": "Advanced Predictive Analytics",
+        "description": "We provide predictive models tailored to specific needs such as customer behavior, market trends, financial forecasting, enabling strategic decision-making."
+      },
+      {
+        "title": "Image and Video Analysis",
+        "description": "Our AI systems extract valuable information from visual data, including object recognition and content understanding from images and videos."
+      },
+      {
+        "title": "Digital Solutions",
+        "description": "We develop custom mobile applications and websites tailored to user needs and aesthetic preferences."
+      }
+    ]
+  },
+  "services": [
+    {
+      "title": "Bank account number detection",
+      "link": "/en/post-bank-account-detection",
+      "description": "A solution for recognizing written or printed bank account numbers with a mobile phone camera",
+      "thumbnail": "/socialpay.webp",
+      "wide": false
+    },
+    {
+      "title": "Vehicle license plate recognition system",
+      "link": "/en/post-alpr-and-anpr",
+      "description": "Vehicle license plate recognition solution using camera and image processing",
+      "thumbnail": "/device_demo_green.webp",
+      "wide": true
+    },
+    {
+      "title": "Parking system enhanced with slot detection",
+      "link": "/en/post-parking-slot-detection",
+      "description": "A solution for counting available parking spaces using parking cameras",
+      "thumbnail": "/slot-detection.webp",
+      "wide": true
+    },
+    {
+      "title": "Chatbots using Large Language Models",
+      "link": "/en/post-llm",
+      "description": "LLM Chatbots for specific use cases fine tuned with prepared context.",
+      "thumbnail": "/llm.webp",
+      "wide": false
+    },
+    {
+      "title": "E-barimt receipt scanning",
+      "link": "/en/post-e-barimt",
+      "description": "Identify the list and price of purchased products from E-Barimt",
+      "thumbnail": "/e-barimt-recognition.webp",
+      "wide": false
+    },
+    {
+      "title": "Traffic monitoring",
+      "link": "/en/post-traffic-monitoring",
+      "description": "A system that can monitor the intensity of traffic with the help of a camera",
+      "thumbnail": "/traffic.webp",
+      "wide": true
+    }
+  ]
+}
