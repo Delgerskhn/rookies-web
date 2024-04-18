@@ -24,11 +24,7 @@ let _posts;
 
 /** */
 export const fetchPosts = async (locale = 'mn') => {
-  if (!_posts) {
-    _posts = await load(locale);
-  }
-
-  return await _posts;
+  return await load(locale);
 };
 
 /** */
