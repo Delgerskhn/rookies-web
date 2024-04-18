@@ -20,7 +20,9 @@ export async function generateMetadata({ params }) {
 
 export async function generateStaticParams() {
   const slugs = (await fetchPosts()).map(({ slug }) => ({ slug }));
-  return slugs;
+  const enPaths = slugs.map((s) => ({ ...s, lang: 'en' }));
+  const mnPaths = slugs.map((s) => ({ ...s, lang: 'mn' }));
+  return [...enPaths, mnPaths];
 }
 
 export default async function Page({ params }) {
