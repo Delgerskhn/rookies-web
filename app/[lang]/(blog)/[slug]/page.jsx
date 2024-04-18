@@ -19,10 +19,9 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  const slugs = (await fetchPosts()).map(({ slug }) => ({ slug }));
-  const enPaths = slugs.map((s) => ({ ...s, lang: 'en' }));
-  const mnPaths = slugs.map((s) => ({ ...s, lang: 'mn' }));
-  return [...enPaths, mnPaths];
+  const enSlugs = (await fetchPosts('en')).map(({ slug }) => ({ slug, lang: 'en' }));
+  const mnSlugs = (await fetchPosts('mn')).map(({ slug }) => ({ slug, lang: 'mn' }));
+  return [...enSlugs, mnSlugs];
 }
 
 export default async function Page({ params }) {
