@@ -11,7 +11,7 @@ export const dynamicParams = false;
 const getFormattedDate = (date) => date;
 
 export async function generateMetadata({ params }) {
-  const post = await findPostBySlug(params.slug);
+  const post = await findPostBySlug(params.slug, params.lang);
   if (!post) {
     return notFound();
   }
@@ -21,7 +21,8 @@ export async function generateMetadata({ params }) {
 export async function generateStaticParams() {
   const enSlugs = (await fetchPosts('en')).map(({ slug }) => ({ slug, lang: 'en' }));
   const mnSlugs = (await fetchPosts('mn')).map(({ slug }) => ({ slug, lang: 'mn' }));
-  return [...enSlugs, mnSlugs];
+  const slugs = [...enSlugs, ...mnSlugs];
+  return slugs;
 }
 
 export default async function Page({ params }) {
