@@ -44,10 +44,11 @@ import {
   IconPhone,
   IconPhoneCall,
 } from '@tabler/icons-react';
+import Head from 'next/head';
 
-export const metadata: Metadata = {
-  title: SITE.title,
-};
+// export const metadata: Metadata = {
+//   title: SITE.title,
+// };
 
 type Props = {
   params: {
@@ -120,6 +121,13 @@ export default async function Page({ params: { lang } }: Props) {
     <>
       {/* <MacbookScroll /> */}
       {/* <HeroParallax products={Services} /> */}
+      <Head>
+        <title>{SITE.title}</title>
+        <meta name="description" content={SITE.description} key="desc" />
+        <meta property="og:title" content={SITE.title} />
+        <meta property="og:description" content={SITE.description} />
+        <meta property="og:image" content="https://www.rookies.mn/android-chrome-192x192.png" />
+      </Head>
       <Hero
         data={{
           title: hero.title,
