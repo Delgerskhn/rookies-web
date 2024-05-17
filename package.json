@@ -24,6 +24,7 @@
     "negotiator": "^0.6.3",
     "next": "^13.4.4",
     "next-themes": "^0.2.1",
+    "posthog-js": "^1.131.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.32.1",
